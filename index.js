@@ -12,7 +12,8 @@ server.get("/status", (req, res) => {
 
 cron.schedule('*/50 * * * * *', async () => {
     try {
-        const response = axios.get('https://eureka-server-latest-8g6s.onrender.com');
+        const response1 = axios.get('https://eureka-server-latest-8g6s.onrender.com');
+        const response2 = axios.get('https://pingservers-ylt0.onrender.com/status');
         console.log("first");
     }
     catch(error) {
